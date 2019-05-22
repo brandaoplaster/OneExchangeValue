@@ -26,4 +26,4 @@ COPY Gemfile ./
 ENV BUNDLE_PATH /gems
  
 # Copia nosso código para dentro do container
-COPY . 
+COPY . .
