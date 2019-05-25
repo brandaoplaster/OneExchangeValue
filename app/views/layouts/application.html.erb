@@ -1,16 +1,41 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>OneExchangeValue</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OneExchangeValue</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <%= favicon_link_tag '/favicon.png' %>
-  </head>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  <%= favicon_link_tag '/favicon.png' %>
+</head>
 
-  <body>
-    <%= yield %>
-  </body>
+<body>
+
+<nav class="navbar navbar-expand-md custom-navbar">
+
+  <%= link_to("/", class: "navbar-brand") do %>
+    <%= image_tag('/logo.png', :style => "width: 30px; margin-left: 40px") %>
+    OneExchangeValue
+  <% end %>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-list-2" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbar-list-2">
+    <ul class="navbar-nav">
+    </ul>
+  </div>
+</nav>
+
+<%= yield %>
+
+<footer class="page-footer font-small mt-5 py-2 bg-white">
+  <div class="footer-copyright text-center py-1">
+    <span class="text-muted">© 2019 Copyright. Lucas Brandao</span>
+  </div>
+</footer>
+
+</body>
 </html>

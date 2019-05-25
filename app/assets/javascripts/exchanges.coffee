@@ -1,4 +1,18 @@
 $(document).ready ->
+
+#  when pressing any key it waits 0.8ms to make the submit
+  $('#amount').bind 'keypress', ->
+    setTimeout (->
+      $('form').submit()
+    ), 800
+
+  #  Changes value of selects
+  $('#reverses').click ->
+    source_currency = $("#source_currency").val()
+    target_currency = $("#target_currency").val()
+    $("#source_currency").val(target_currency)
+    $("#target_currency").val(source_currency)
+
   $('form').submit ->
     if $('form').attr('action') == '/convert'
       $.ajax '/convert',
