@@ -12,6 +12,24 @@
 </head>
 
 <body>
+
+<nav class="navbar navbar-expand-md custom-navbar">
+
+  <%= link_to("/", class: "navbar-brand") do %>
+    <%= image_tag('/logo.png', :style => "width: 30px; margin-left: 40px") %>
+    OneExchageValue
+  <% end %>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-list-2" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbar-list-2">
+    <ul class="navbar-nav">
+    </ul>
+  </div>
+</nav>
+
 <%= yield %>
+
 </body>
 </html>

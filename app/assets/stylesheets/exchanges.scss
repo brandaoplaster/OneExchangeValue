@@ -4,6 +4,22 @@ body {
   background: linear-gradient(to right, #136a8a, #267871);
 }
 
+.custom-navbar {
+  -webkit-box-shadow: 0 8px 6px -6px black;
+  -moz-box-shadow: 0 8px 6px -6px black;
+  box-shadow: 0 8px 6px -6px #19171778;
+  background-color: #f8f9fa;
+}
+
+.navbar-brand {
+  color: #000000;
+}
+
+a:hover {
+  color: #267871;
+  text-decoration: underline;
+}
+
 .exchange_box {
   margin: 10px auto;
 
