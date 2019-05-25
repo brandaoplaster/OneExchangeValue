@@ -1,24 +1,45 @@
 <div class='container'>
-  <div class='row main'>
-    <div class='col-lg-3 offset-lg-1 col-md-10 offset-md-1 exchange_box'>
-      <div class='row'>
-        <div class='col-md-8 offset-md-2 text-sm-center'>
-          <%= image_tag '/logo.png', class: 'img-fluid' %>
+
+  <div class='row mt-3'>
+    <%= render 'exchange_box' %>
+
+    <div class="col-md-8 banner-sec">
+      <div id="carouselBannerndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselBannerndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselBannerndicators" data-slide-to="1"></li>
+        </ol>
+
+        <div class="carousel-inner" role="listbox">
+          <div class="carousel-item active">
+
+            <div class="carousel-caption d-none d-md-block">
+              <div class="banner-text">
+                <h2>Currency</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                  nostrud exercitation
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+
+            <div class="carousel-caption d-none d-md-block">
+              <div class="banner-text">
+                <h2>Cryptocurrency</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                  nostrud exercitation
+                </p>
+              </div>
+            </div>
+          </div>
+
         </div>
-      </div>
-
-      <div class='row'>
-        <%= render 'exchange_box' %>
-      </div>
-    </div>
-
-    <div class='col-lg-7 offset-lg-1 hidden-sm-down title-box'>
-      <div class='row'>
-        <h2 class='subtitle'>Converta facilmente suas Moedas</h2>
-      </div>
-
-      <div class='row'>
-        <h3 class='subtitle'>Para qualquer moeda no Mundo!</h3>
       </div>
     </div>
   </div>
