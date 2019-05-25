@@ -4,32 +4,105 @@ body {
   background: linear-gradient(to right, #136a8a, #267871);
 }
 
-.main {
-  margin-top: 50px;
-}
-
-.title-box {
-  margin-top: 20%;
-
-  .title {
-    color: white;
-    text-shadow: 2px 0px 2px #000000;
-  }
-
-  .subtitle {
-    color: white;
-    text-shadow: 3px 0px 3px #000000;
-    font-size: 30px;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-}
-
 .exchange_box {
   margin: 10px auto;
 
   .logo-box {
     margin: 0 auto;
     padding-bottom: 10px;
+  }
+}
+
+.banner-sec {
+  min-height: 500px;
+  border-radius: 0 10px 10px 0;
+  padding: 0;
+}
+
+.container {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 15px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-inner {
+  border-radius: 0 10px 10px 0;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-caption {
+  text-align: left;
+  left: 5%;
+}
+
+.container-form {
+  padding: 50px 30px;
+  position: relative;
+
+  .text-uppercase {
+    font-size: 15px;
+  }
+
+  .copy-text {
+    position: absolute;
+    width: 80%;
+    bottom: 20px;
+    font-size: 13px;
+    text-align: center;
+
+    i {
+      color: #FEB58A;
+    }
+
+    a {
+      color: #E36262;
+    }
+  }
+
+  h2 {
+    margin-bottom: 20px;
+    font-weight: 800;
+    font-size: 19px;
+    color: #136a8a;
+
+    &:after {
+      content: " ";
+      width: 100px;
+      height: 5px;
+      background: -webkit-linear-gradient(to right, #136a8a, #267871);
+      background: linear-gradient(to right, #136a8a, #267871);
+      display: block;
+      margin-top: 20px;
+      border-radius: 3px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+
+.banner-text {
+  width: 70%;
+  position: absolute;
+  bottom: 40px;
+  padding-left: 20px;
+
+  h2 {
+    color: #fff;
+    font-weight: 600;
+
+    &:after {
+      content: " ";
+      width: 100px;
+      height: 5px;
+      background: #FFF;
+      display: block;
+      margin-top: 20px;
+      border-radius: 3px;
+    }
+  }
+
+  p {
+    color: #fff;
   }
 }
