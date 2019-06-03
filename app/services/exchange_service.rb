@@ -22,4 +22,17 @@ class ExchangeService
       e.response
     end
   end
+
+  def cryptonator
+    begin
+      exchange_api_url = Rails.application.credentials[Rails.env.to_sym][:api_url_cryptonator]
+      url = "#{exchange_api_url}#{@source_currency}-#{@target_currency}"
+      res = RestClient.get url
+      value = JSON.parse(res.body)['ticker'][0]['price'].to_f
+
+      value * @amount
+    rescue RestClient::ExceptionWithResponse => e
+      e.response
+    end
+  end
 end
