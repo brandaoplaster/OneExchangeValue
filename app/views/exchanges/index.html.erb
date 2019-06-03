@@ -1,24 +1,43 @@
-<div class='container'>
-  <div class='row main'>
-    <div class='col-lg-3 offset-lg-1 col-md-10 offset-md-1 exchange_box'>
-      <div class='row'>
-        <div class='col-md-8 offset-md-2 text-sm-center'>
-          <%= image_tag '/logo.png', class: 'img-fluid' %>
+<div class='container mb-3'>
+
+  <div class='row mt-3'>
+    <%= render 'exchange_box' %>
+
+    <div class="col-sm-6 col-md-12 col-lg-8 banner-sec">
+      <div id="carouselBannerndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselBannerndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselBannerndicators" data-slide-to="1"></li>
+        </ol>
+
+        <div class="carousel-inner" role="listbox">
+          <div class="carousel-item active">
+            <%= image_tag '/slide/slide_001.jpg', class: 'img-fluid', alt: "Banner currency" %>
+            <div class="carousel-caption d-none d-md-block">
+              <div class="banner-text">
+                <h2>Conversor de moedas</h2>
+                <p class="text-justify">
+                  Com o nosso conversor de moedas exclusivo, você pode converter moedas de maneira fácil e rápida com
+                  muitas vantagens
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <%= image_tag '/slide/slide_002.jpg', class: 'img-fluid', alt: "Banner cryptocurrency" %>
+            <div class="carousel-caption d-none d-md-block">
+              <div class="banner-text">
+                <h2>Criptomoeda</h2>
+                <p class="text-justify">
+                  Criptomoeda é uma moeda digital construída com protocolos criptográficos que tornam as transações
+                  seguras e difíceis de falsificar.
+                </p>
+              </div>
+            </div>
+          </div>
+
         </div>
-      </div>
-
-      <div class='row'>
-        <%= render 'exchange_box' %>
-      </div>
-    </div>
-
-    <div class='col-lg-7 offset-lg-1 hidden-sm-down title-box'>
-      <div class='row'>
-        <h2 class='subtitle'>Converta facilmente suas Moedas</h2>
-      </div>
-
-      <div class='row'>
-        <h3 class='subtitle'>Para qualquer moeda no Mundo!</h3>
       </div>
     </div>
   </div>
